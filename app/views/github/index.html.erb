@@ -9,4 +9,7 @@
 		<br/>
 		<%= render partial: 'search', locals: { results: @results } %>
 	</div>
+	<div class="col navigation">
+		<%= raw pagination(@results, @repo_name, @per_page, @page) %>
+	</div>
 </div>
