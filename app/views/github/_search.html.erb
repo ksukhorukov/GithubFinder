@@ -1,6 +1,6 @@
 <% if results.present? %>
 	<center>
-			<h2>Search results</h2>
+			<h2>Search results <%= "(#{results[:total_count]})" %></h2>
 	</center>
 	<br/>
 	<% if results[:total_count].to_i == 0 %>
@@ -10,6 +10,7 @@
 	<% else %>
 		<% results[:items].each do |item| %>
 			<%= render partial: 'search_item', locals: { item: item } %>
+			<hr/>
 		<% end %>
 	<% end %>
 <% end %>

@@ -6,3 +6,34 @@
 	margin: 2em 0em 2em 0em;
 	text-align: center;
 }
+
+.search-form {
+	width: 100%;
+	text-align:center;
+	margin-bottom: 2em;
+}
+
+.search-form input[type=text] {
+	padding-left:0.3em;
+	padding-right:0.3em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	margin-right: 0.3em;
+	width: 80%;
+	border-width: 1px;
+	border-color: lightblue;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#search-button {
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+	width: 18%;
+}
+
+.navigation {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+}

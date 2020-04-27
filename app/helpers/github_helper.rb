@@ -13,7 +13,7 @@ module GithubHelper
 				navigation += '<< Previous '
 			end 
 
-			navigation += "<a href='?repo_name=#{repo_name}&per_page=#{per_page}&page=#{page}'> #{page} </a> "
+			navigation += "<a href='?repo_name=#{repo_name}&per_page=#{per_page}&page=#{page}'> [#{page}] </a> "
 
 			if page < number_of_pages
 	  		navigation += "<a href='?repo_name=#{repo_name}&per_page=#{per_page}&page=#{page+1}'>Next >></a> "
