@@ -1,0 +1,22 @@
+Started GET "/" for 127.0.0.1 at 2020-04-27 04:58:22 +0300
+Processing by GithubController#index as HTML
+  Rendering github/index.html.erb within layouts/application
+  Rendered github/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 296)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/kirill/workspace/githubfinder/public/packs
+[Webpacker] Hash: a18cddf1ad729026e506
+Version: webpack 4.43.0
+Time: 14255ms
+Built at: 2020-04-27 04:58:49
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-0ac71d79a9cfb06b89c2.js   87.9 KiB  application  [emitted] [immutable]  application
+js/application-0ac71d79a9cfb06b89c2.js.map   97.1 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-0ac71d79a9cfb06b89c2.js js/application-0ac71d79a9cfb06b89c2.js.map
+[./app/javascript/packs/application.js] 685 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 2 hidden modules
+
+Completed 200 OK in 26313ms (Views: 26264.6ms | Allocations: 17780)
+
+
