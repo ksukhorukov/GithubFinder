@@ -1,6 +1,6 @@
 class GithubController < ApplicationController
 	def index
-		@result  = GithubService.new(github_params).search.to_json
+		@results  = GithubService.new(github_params).search
 	end
 
 	private

@@ -1,7 +1,7 @@
 require 'octokit'
 
 class GithubService
-	attr_reader :repo_name, :page, :per_page, :client, :result
+	attr_reader :repo_name, :page, :per_page, :client, :results
 
 	def initialize(params = {})
 		@repo_name = params.fetch(:repo_name, '')
@@ -12,7 +12,12 @@ class GithubService
 	end
 
 	def search
-		@result ||= client.search_repos(repo_name, { per_page: per_page, page: page })
+		begin
+			@results ||= client.search_repos(repo_name, { per_page: per_page, page: page })	
+		rescue Exception => e 
+			@results = []
+		end
+		byebug
 	end
 
 	def pagination

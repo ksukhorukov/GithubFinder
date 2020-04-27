@@ -2,4 +2,11 @@
 	<div class="col logo">
 		<h1>Github Finder</h1>
 	</div>
+	<div class="col search-results">
+		<center>
+			<h2>Search results</h2>
+		</center>
+		<br/>
+		<%= render partial: 'search', locals: { results: @results } %>
+	</div>
 </div>
