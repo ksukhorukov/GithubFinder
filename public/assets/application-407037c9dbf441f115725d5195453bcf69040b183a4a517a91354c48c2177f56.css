@@ -1,0 +1,76 @@
+/* line 5, app/assets/stylesheets/github.scss */
+.logo {
+  margin: 2em 0em 2em 0em;
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+
+/* line 11, app/assets/stylesheets/github.scss */
+.search-form {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+/* line 17, app/assets/stylesheets/github.scss */
+.search-form input[type=text] {
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-right: 0.3em;
+  width: 80%;
+  border-width: 1px;
+  border-color: lightblue;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 30, app/assets/stylesheets/github.scss */
+#search-button {
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  width: 18%;
+}
+
+/* line 36, app/assets/stylesheets/github.scss */
+.navigation {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* line 42, app/assets/stylesheets/github.scss */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 47, app/assets/stylesheets/github.scss */
+body {
+  margin-bottom: 60px;
+  /* Margin bottom by footer height */
+}
+
+/* line 51, app/assets/stylesheets/github.scss */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+ 
