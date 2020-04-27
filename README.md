@@ -14,6 +14,9 @@ Github projects finder.
 
 ``yarn``
 
+## Test
+
+``rspec``
 
 ## Run
 
