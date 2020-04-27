@@ -5,10 +5,20 @@ module GithubHelper
 		if results.present?
 			total_count = results[:total_count].to_i
 			number_of_pages = (total_count / per_page.to_i).ceil
+			page = page.to_i
 			
+			if page >= 2 
+				navigation += "<a href='?repo_name=#{repo_name}&per_page=#{per_page}&page=#{page-1}'><< Previous</a> "
+			else
+				navigation += '<< Previous '
+			end 
 
-			for i in 1..number_of_pages do
-	  		navigation += "<a href='?repo_name=#{repo_name}&per_page=#{per_page}&page=#{i}'>#{i}</a> "
+			navigation += "<a href='?repo_name=#{repo_name}&per_page=#{per_page}&page=#{page}'> #{page} </a> "
+
+			if page < number_of_pages
+	  		navigation += "<a href='?repo_name=#{repo_name}&per_page=#{per_page}&page=#{page+1}'>Next >></a> "
+			else
+				navigation += 'Next >>'
 			end
 		end
 

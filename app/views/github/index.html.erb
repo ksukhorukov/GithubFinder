@@ -2,11 +2,13 @@
 	<div class="col logo">
 		<h1>Github Finder</h1>
 	</div>
+	<div class="col search-form">
+		<form name="search" action="/">
+			<input type="text" name="repo_name" value="Project name..." id="query" />
+			<input type="submit" value="Search" class="btn btn-large info" id="search-button" />
+		</form>
+	</div>
 	<div class="col search-results">
-		<center>
-			<h2>Search results</h2>
-		</center>
-		<br/>
 		<%= render partial: 'search', locals: { results: @results } %>
 	</div>
 	<div class="col navigation">

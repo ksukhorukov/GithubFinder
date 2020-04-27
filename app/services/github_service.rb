@@ -5,7 +5,7 @@ class GithubService
 
 	def initialize(params = {})
 		@repo_name = params.fetch(:repo_name, '')
-		@per_page = params.fetch(:per_page, 100)
+		@per_page = params.fetch(:per_page, 10)
 		@page = params.fetch(:page, 1)
 
 		@client = Octokit::Client.new
@@ -16,8 +16,9 @@ class GithubService
 			@results ||= client.search_repos(repo_name, { per_page: per_page, page: page })	
 		rescue Exception => e 
 			@results = []
+		ensure
+			@results
 		end
-		byebug
 	end
 end
 

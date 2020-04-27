@@ -1,7 +1,7 @@
 <div class="search-item">
 	<ul>
 		<li><%= item[:full_name] %></li>
-		<li><%= item[:description] %></li>
-		<li><%= item[:html_url] %></li>
+		<li><%= item[:description] || 'No description'%></li>
+		<li><%= raw "<a href='#{item[:html_url]}'>#{item[:html_url]}</a>" %></li>
 	</ul>
 </div>

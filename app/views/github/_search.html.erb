@@ -1,5 +1,15 @@
 <% if results.present? %>
-	<% @results[:items].each do |item| %>
-		<%= render partial: 'search_item', locals: { item: item } %>
+	<center>
+			<h2>Search results</h2>
+	</center>
+	<br/>
+	<% if results[:total_count].to_i == 0 %>
+		<center>
+				<h2>Nothing found :(</h2>
+		</center>
+	<% else %>
+		<% results[:items].each do |item| %>
+			<%= render partial: 'search_item', locals: { item: item } %>
+		<% end %>
 	<% end %>
 <% end %>
