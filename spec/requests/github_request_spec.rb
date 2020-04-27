@@ -15,4 +15,9 @@ RSpec.describe "Githubs", type: :request do
   	get "#{root_path}?repo_name=2d931510-d99f-494a-8c67-87feb05e1594"
   	expect(response.body).to include("Test repo for Github Finder")
   end
+
+	it "display not found when repo does not exist" do 
+  	get "#{root_path}?repo_name=bad85eb9-0713-4da7-8d36-07a8e4b00eab"
+  	expect(response.body).to include("Nothing found")
+  end
 end
